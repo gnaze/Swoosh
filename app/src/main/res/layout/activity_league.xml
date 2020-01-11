@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".Controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -86,7 +86,7 @@
             android:textOn="@string/womens" />
 
         <ToggleButton
-            android:id="@+id/coedLeagueBtn"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/swoosh_toggle"
