@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class SkillActivity : AppCompatActivity() {
+class SkillActivity : BaseActivity() {
+
+    var League = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
+        League = intent.getStringExtra(EXTRA_LEAGUE)
+        println(League)
     }
 
-   fun leagueNextClicked(view: View){
-    val skillActivity = Intent(this, SkillActivity::class.java)
-       startActivity(skillActivity)
-}
 }
